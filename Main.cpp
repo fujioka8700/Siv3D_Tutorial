@@ -2,16 +2,18 @@
 
 void Main()
 {
-	Print << U"こんにちは";
+	bool   a = false;
+	int32  b = 123;
+	double c = 0.5;
+	size_t d = 100;
 
-	int32 count = 0;
+	Print << U"a:" << a;
+	Print << U"b:" << b;
+	Print << U"c:" << c;
+	Print << U"d:" << d;
 
 	while (System::Update())
 	{
-		ClearPrint();
-
-		Print << count;
-
-		count++;
+		
 	}
 }
