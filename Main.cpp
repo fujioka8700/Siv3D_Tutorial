@@ -14,6 +14,9 @@ void Main()
 	// 終了操作を設定しない
 	System::SetTerminationTriggers(UserAction::NoAction);
 
+	// 終了操作をデフォルトに戻す
+	System::SetTerminationTriggers(UserAction::Default);
+
 	// 画像ファイルから画像データを読み込んでテクスチャを作成する
 	const Texture texture{ U"example/windmill.png" };
 
