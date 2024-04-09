@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Siv3D_Tutorial", "Siv3D_Tutorial.vcxproj", "{2470D467-71CB-4E22-A874-B690E70E4FA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2470D467-71CB-4E22-A874-B690E70E4FA9}.Debug|x64.ActiveCfg = Debug|x64
+		{2470D467-71CB-4E22-A874-B690E70E4FA9}.Debug|x64.Build.0 = Debug|x64
+		{2470D467-71CB-4E22-A874-B690E70E4FA9}.Release|x64.ActiveCfg = Release|x64
+		{2470D467-71CB-4E22-A874-B690E70E4FA9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2C800B9-D9DB-4711-85C2-1F8FCD9A8D70}
+	EndGlobalSection
+EndGlobal
