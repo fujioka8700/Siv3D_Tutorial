@@ -2,10 +2,12 @@
 
 void Main()
 {
+	// 画像ファイルから画像データを読み込んでテクスチャを作成する
+	const Texture texture{ U"example/windmill.png" };
+
 	while (System::Update())
 	{
-		int32 fps = Profiler::FPS();
-
-		Window::SetTitle(fps);
+		// テクスチャを描画する
+		texture.draw();
 	}
 }
