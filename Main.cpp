@@ -9,7 +9,7 @@ void Main()
 		// 実行時間が 3 秒以上経過したら
 		if (3.0 <= Scene::Time())
 		{
-			System::Exit(); // 次の System::Update() が false を返すようにする
+			return;
 		}
 
 		// 処理A();
