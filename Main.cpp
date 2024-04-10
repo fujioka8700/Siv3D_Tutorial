@@ -2,21 +2,19 @@
 
 void Main()
 {
-	bool   a = false;
-	int32  b = 123;
-	double c = 0.5;
-	size_t d = 100;
-	char32 e = U'A';
-	String f = U"Hello";
-	FilePath g = U"example/windmill.png";
+	Array<int32> a = {10, 20, 50, 100};
+	Optional<double> b;
 
 	Print << U"a:" << a;
 	Print << U"b:" << b;
-	Print << U"c:" << c;
-	Print << U"d:" << d;
-	Print << U"e:" << e;
-	Print << U"f:" << f;
-	Print << U"g:" << g;
+
+	b = 12.3;
+
+	Print << U"b:" << b;
+
+	b = none;
+
+	Print << U"b:" << b;
 
 	while (System::Update())
 	{
