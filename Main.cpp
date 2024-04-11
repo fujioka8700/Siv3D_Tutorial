@@ -4,8 +4,8 @@ void Main()
 {
 	while (System::Update())
 	{
-		const double hue = (Scene::Time() * 60.0);
+		ClearPrint();
 
-		Scene::SetBackground(HSV{ hue });
+		Print << Cursor::Pos();
 	}
 }
