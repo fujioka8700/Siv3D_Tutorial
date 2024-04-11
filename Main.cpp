@@ -2,7 +2,7 @@
 
 void Main()
 {
-	Scene::SetBackground(Palette::White);
+	Scene::SetBackground(Palette::Black);
 
 	while (System::Update())
 	{
