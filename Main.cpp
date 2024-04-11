@@ -2,7 +2,7 @@
 
 void Main()
 {
-	Scene::SetBackground(HSV{ 180.0, 0.4, 0.8 });
+	Scene::SetBackground(HSV{ 80.0 });
 
 	while (System::Update())
 	{
