@@ -4,8 +4,6 @@ void Main()
 {
 	while (System::Update())
 	{
-		ClearPrint();
-
-		Print << Cursor::Pos();
+		Circle{ 400, 300, 20 }.draw();
 	}
 }
