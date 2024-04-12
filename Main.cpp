@@ -4,12 +4,8 @@ void Main()
 {
 	while (System::Update())
 	{
-		Circle{ 400, 300, 200}.draw();
+		Rect{ 20, 40, 400, 100 }.draw();
 
-		Circle{ 200, 300, 200 }.draw(ColorF{ 1.0, 0.0, 0.0, 0.9 });
-
-		Circle{ 600, 300, 200 }.draw(HSV{ 240.0, 0.5, 1.0, 0.2 });
-
-		Circle{ Cursor::Pos(), 100 }.draw(ColorF{ 0.0, 0.5 });
+		Rect{ 100, 200, 80 }.draw(Palette::Orange);
 	}
 }
