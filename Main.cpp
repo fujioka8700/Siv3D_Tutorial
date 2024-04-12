@@ -4,8 +4,8 @@ void Main()
 {
 	while (System::Update())
 	{
-		Rect{ 20, 40, 400, 100 }.draw();
+		const double w = (Scene::Time() * 20.0);
 
-		Rect{ 100, 200, 80 }.draw(Palette::Orange);
+		RectF{ 20, 40, w, 100 }.draw();
 	}
 }
