@@ -2,9 +2,12 @@
 
 void Main()
 {
+	Scene::SetBackground(ColorF{ 0.3, 0.6, 1.0 });
+
 	while (System::Update())
 	{
-		Rect{ 100, 100, 100, 30 }.draw();
+		Rect{ 0, 0, 600, 500 }
+			.draw(Arg::top = ColorF{ 0.5, 0.7, 0.9 }, Arg::bottom = ColorF{ 0.5, 0.9, 0.7 });
 
 		Rect{ 220, 100, 100, 30 }.drawFrame(3, 0);
 
