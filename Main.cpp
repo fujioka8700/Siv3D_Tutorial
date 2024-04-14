@@ -8,7 +8,7 @@ void Main()
 	{
 		for (int32 x = 0; x < 6; x++)
 		{
-			Rect{ (x * 100), 0, 80, 600 }.draw(Palette::Skyblue);
+			Rect{ (x * 100), 0, 80, 600 }.draw(ColorF{ 0.0, (x * 0.2), 1.0 });
 		}
 	}
 }
