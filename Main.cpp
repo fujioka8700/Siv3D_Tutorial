@@ -10,7 +10,14 @@ void Main()
 		{
 			for (int32 x = 0; x < 6; x++)
 			{
-				Circle{ (x * 100), (y * 100), 30 }.draw(Palette::Skyblue);
+				if ((x + y) % 2 == 0)
+				{
+					Circle{ (x * 100), (y * 100), 10 }.draw(Palette::Skyblue);
+				}
+				else
+				{
+					Circle{ (x * 100), (y * 100), 30 }.draw(Palette::Skyblue);
+				}
 			}				
 		}
 	}
