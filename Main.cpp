@@ -9,13 +9,11 @@ void Main()
 
 	while (System::Update())
 	{
-		static int32 i = 0;
+		const int32 cursorX = Cursor::Pos().x;
 
-		emoji1.scaled(0.6).rotated(10_deg).drawAt(100, 100);
-		emoji2.scaled(0.3).rotated(270_deg).drawAt(200, 300);
-		emoji1.rotated(i * (Math::Pi / 180)).drawAt(400, 300);
-		emoji2.drawAt(Cursor::Pos());
+		emoji1.mirrored(false).drawAt(100, 100);
+		emoji1.mirrored(true).drawAt(200, 100);
 
-		i+=2;
+		emoji1.mirrored(400 <= cursorX).drawAt(400, 300);
 	}
 }
