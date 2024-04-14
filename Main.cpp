@@ -6,9 +6,9 @@ void Main()
 
 	while (System::Update())
 	{
-		for (int32 x = 0; x < 6; x++)
+		for (int32 x = 0; x < 10; x++)
 		{
-			Rect{ (x * 100), 0, 80, 600 }.draw(ColorF{ 0.0, (x * 0.2), 1.0 });
+			Rect{ (x * 80), 0, 80, 600 }.draw(HSV{ (x * 36), 0.5, 1.0 });
 		}
 	}
 }
