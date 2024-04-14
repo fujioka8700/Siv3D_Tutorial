@@ -2,13 +2,16 @@
 
 void Main()
 {
-	Scene::SetBackground(Palette::White);
+	Scene::SetBackground(ColorF{ 0.8, 0.9, 1.0 });
+
+	const Texture emoji1{ U"🐈"_emoji };
+	const Texture emoji2{ U"🍎"_emoji };
 
 	while (System::Update())
 	{
-		for (int32 x = 0; x < 10; x++)
-		{
-			Rect{ (x * 80), 0, 80, 600 }.draw(HSV{ (x * 36), 0.5, 1.0 });
-		}
+		emoji1.drawAt(100, 100);
+		emoji2.drawAt(200, 300);
+		emoji1.drawAt(400, 300);
+		emoji2.drawAt(Cursor::Pos());
 	}
 }
