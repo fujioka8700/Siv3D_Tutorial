@@ -9,8 +9,8 @@ void Main()
 
 	while (System::Update())
 	{
-		emoji1.drawAt(100, 100);
-		emoji2.drawAt(200, 300);
+		emoji1.scaled(0.6).drawAt(100, 100);
+		emoji2.scaled(0.3).drawAt(200, 300);
 		emoji1.drawAt(400, 300);
 		emoji2.drawAt(Cursor::Pos());
 	}
